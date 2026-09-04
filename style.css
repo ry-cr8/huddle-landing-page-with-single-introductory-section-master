@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 *,
 *::before,
 *::after {
@@ -8,6 +9,11 @@
 
 :root {
   --purple700: hsl(257, 40%, 49%);
+  --magenta400: hsl(300, 69%, 71%);
+  --fontweight400: 400;
+  --fontweight600: 600;
+  --poppins: "Poppins", sans-serif;
+  --opensans: "Open Sans", sans-serif;
 }
 
 body {
@@ -33,6 +39,33 @@ main {
 
 .text-container {
   margin: 0 2rem;
+}
+
+.text {
+  color: white;
+}
+
+.header {
+  font-family: var(--poppins);
+  font-weight: var(--fontweight600);
+  margin-block: 1rem;
+}
+
+.paragraph {
+  font-family: var(--opensans);
+  font-weight: var(--fontweight400);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.button-reg {
+  padding: 1rem 4rem;
+  border-radius: 2rem;
+  border: none;
+  font-weight: var(--fontweight400);
+  font-family: var(--poppins);
+  font-size: 0.9rem;
+  color: var(--purple700);
 }
 
 .attribution {
