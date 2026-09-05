@@ -59,18 +59,32 @@ main {
 }
 
 .button-reg {
-  padding: 1rem 4rem;
+  padding: 0.9rem 4rem;
   border-radius: 2rem;
   border: none;
   font-weight: var(--fontweight400);
-  font-family: var(--poppins);
-  font-size: 0.9rem;
+  font-family: var(--opensans);
+  font-size: 1rem;
   color: var(--purple700);
+  background-color: white;
+
+  box-shadow: 0 4px 10px 5px rgba(0, 0, 0, 0.25);
+
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.button-reg:hover {
+  background-color: var(--magenta400);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px 5px rgba(0, 0, 0, 0.2);
 }
 
 .attribution {
   font-size: 0.6875rem;
   text-align: center;
+  margin-top: 3rem;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
