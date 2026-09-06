@@ -81,6 +81,37 @@ main {
   box-shadow: 0 6px 15px 5px rgba(0, 0, 0, 0.2);
 }
 
+.icons {
+  height: 45px;
+  width: 45px;
+  color: white;
+  border: 2px solid white;
+  padding: 0.6rem;
+  border-radius: 50%;
+  filter: brightness(0) invert(1);
+  transition:
+    border-color 0.25s ease,
+    filter 0.25s ease,
+    transform 0.25s ease;
+}
+
+.icons:hover {
+  transform: translateY(-3px);
+}
+
+.icon-links:hover .icons {
+  filter: invert(62%) sepia(27%) saturate(2256%) hue-rotate(264deg)
+    brightness(97%) contrast(85%);
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+  top: 650px;
+  left: 1100px;
+}
+
 .attribution {
   font-size: 0.6875rem;
   text-align: center;
